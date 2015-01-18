@@ -1,3 +1,5 @@
+
+.world,
 body {
 
     background-color: #003366;
@@ -20,7 +22,7 @@ body {
    ========================================================================== */
 .chloePic {
     height: 750px;
-    margin-top: -100px;
+    margin-top: -50px;
     margin-left: -20px;
     /*width: 100%;*/
     /*z-index: 0;*/
@@ -31,7 +33,17 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    transform: scale(2.5);
+
+
+-webkit-transform:scale(.8); /*Webkit: Scale down image to 0.6x original size*/
+    -moz-transform:scale(.8); /*Mozilla scale version*/
+    -o-transform:scale(.8); /*Opera scale version*/
+    -webkit-transition-duration: 1.5s; /*Webkit: Animation duration*/
+    -moz-transition-duration: 1.5s; /*Mozilla duration version*/
+    -o-transition-duration: 1.5s; /*Opera duration version*/
+
+
 }
 
 
