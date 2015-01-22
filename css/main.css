@@ -32,43 +32,53 @@ width: 80%;
 margin-top: 0px;
 height:100%;
 }
+
 .chloePic {
     height: 750px;
     margin-top: -50px;
     margin-left: -20px;
-    /*width: 100%;*/
-    /*z-index: 0;*/
-
-
-    /*height: 100%;*/
-    /*position: absolute;*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-/**/    /*transform: scale(2.5);*/
-
+}
+.chloePic > .sloganContainer {
+margin-top:30%;
+width: 100%;
+height: 100%;
+display: inline-block;
+vertical-align: middle;
+line-height: 0;
+font-size: 1em;
+padding: 0 5%;
 /*
-
--webkit-transform:scale(.8); */
-/*Webkit: Scale down image to 0.6x original size*//*
-
-    -moz-transform:scale(.8); */
-/*Mozilla scale version*//*
-
-    -o-transform:scale(.8); */
-/*Opera scale version*//*
-
-    -webkit-transition-duration: 1.5s; */
-/*Webkit: Animation duration*//*
-
-    -moz-transition-duration: 1.5s; */
-/*Mozilla duration version*//*
-
-    -o-transition-duration: 1.5s; */
-/*Opera duration version*//*
-
+filter: alpha(opacity=0);
+-webkit-opacity: 0;
+-moz-opacity: 0;
+opacity: 0;
 
 */
+1
+
+}
+.slogan {
+color:#ffffff;
+
+font: italic 1.3em georgia;
+border-top: 1px solid rgba(0,0,0,.1);
+border-top: 1px solid rgba(255,255,255,.4);
+padding-top: 10px;
+display: inline-block;
+margin-left:    38%;
+margin-right:   auto;
+text-align:center;
+}
+
+
+.slogan .name {
+ font-size: 2.5em;
+  font-weight: 200;
+ // display: inline-block;
+  line-height: normal;
 
 }
 
@@ -466,3 +476,24 @@ border-bottom-color: #336699;
 }
 
 
+.info ul {
+    list-style-type: none;
+}
+
+.info ul >li {
+    margin-bottom: 10px;
+}
+
+.quicklinks {
+    color: #ffffff;
+    margin-top:50px;
+    margin-left:20px;
+}
+
+.quicklinks  ul{
+    color: #ffffff;
+    list-style-type: none;
+}
+.quicklinks  ul > li
+    color: #ffffff;
+}
