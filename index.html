@@ -21,7 +21,7 @@
         <div class="col-sm-12 col-md-12 ">
             <!--<div class="jumbotron">-->
             <!--<div class="container chloePic">-->
-            <div class="chloePic">
+            <div class="chloePic mainBG">
 
                 <!--</div>-->
             </div>
@@ -34,8 +34,9 @@
                 <li class="active"><a href="#" id="li_home" class="subPicker">Home</a>
                 </li>
                 <li><a href="#" id="li_bio" class="subPicker">Biography</a></li>
-                <li><a href="#" id="li_accomp"
-                       class="subPicker">Accomplishment</a></li>
+                <li><a href="#" id="li_donate"
+                       class="subPicker">Donate</a></li>
+                <li><a href="#" id="li_join" class="subPicker">Join</a>
                 <li><a href="#" id="li_contact" class="subPicker">Contact Us</a>
                 </li>
 
@@ -112,10 +113,17 @@
                     BIO
                 </div>
             </div>
-            <div class="col-sm-6 col-md-68  info accomp hidden">
+
+            <div class="col-sm-6 col-md-68  info join hidden">
                 <!--<div class="jumbotron">-->
                 <div>
-                    Accomplishments
+                    Join
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-68  info donate hidden">
+                <!--<div class="jumbotron">-->
+                <div>
+                    Donate
                 </div>
             </div>
             <div class="col-sm-6 col-md-68 info contact hidden">
@@ -132,8 +140,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
-        $(".chloePic").height(Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 0.9);
 
+        $(".chloePic").height(Math.max(document.documentElement.clientHeight, window.innerHeight || 0) );
 
         $('.subPicker').on('click', function (e) {
             e.preventDefault();
@@ -143,12 +151,36 @@
             console.log(sectionName);
             if (sectionName) {
 
+                if (sectionName == 'bio') {
+                    $('.chloePic').removeClass('mainBG');
+                    $('.chloePic').addClass('bioBG');
+
+                      var bg_url = $('.bioBG').css('background-image');
+                 // ^ Either "none" or url("...urlhere..")
+                bg_url = /^url\((['"]?)(.*)\1\)$/.exec(bg_url);
+                bg_url = bg_url ? bg_url[2] : null; // If matched, retrieve url, otherwise ""
+
+
+                    var img = new Image();
+                    img.onload = function() {
+                      alert(this.width + 'x' + this.height);
+                    }
+                    img.src = bg_url;
+
+
+
+
+                } else {
+                $('.chloePic').removeClass('bioBG');
+                    $('.chloePic').addClass('mainBG');
+                }
                 $(".info").addClass('hidden');
                 $("." + sectionName).removeClass('hidden');
                 $('body').scrollTop(0);
                 $('.nav-sidebar li').removeClass('active');
                 $("#" + idName).parent().addClass('active');
             }
+
 
         });
 

@@ -20,14 +20,26 @@ body {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
+.mainBG {
+background-image: url(img/bg2.png) ;
+width: 110%;
+
+}
+.chloePic.bioBG {
+background-image: url(img/secondBG.jpg) ;
+width: 80%;
+margin-top: 0px;
+height:100%;
+}
 .chloePic {
     height: 750px;
     margin-top: -50px;
     margin-left: -20px;
     /*width: 100%;*/
     /*z-index: 0;*/
-    background-image: url(img/bg.jpg) ;
-    width: 110%;
+
+
     /*height: 100%;*/
     /*position: absolute;*/
     background-repeat: no-repeat;
@@ -371,22 +383,48 @@ body {
     margin-bottom: 20px;
  #   margin-left: -20px;
 }
-.nav-sidebar > li > a {
+.nav.nav-sidebar > li > a {
     padding-right: 20px;
     padding-left: 20px;
 }
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-    color: #fff;
+.nav.nav-sidebar > .active > a,
+.nav.nav-sidebar > .active > a:hover,
+.nav.nav-sidebar > .active > a:focus
+{
+    color: #ffffff;
     background-color: #003366;
 }
- .sidebar ul li {
+.nav.nav-sidebar >  a:hover,
+ .nav.nav-sidebar > a:focus
+ {
+   transform: translateX(3px);
+       color: #3399CC;
+     background-color: #003366;
+ }
+/*
+.nav-sidebar ul li {
+}*/
+.nav.nav-sidebar li a {
+    color: #3399CC;
+      background-color: #003366;
+}
+.nav.nav-sidebar li a:hover {
+transform: translateX(3px);
+    color: #3399CC;
+      background-color: #003366;
+}
+
+
+
+.nav-sidebar li {
 border-bottom-width: 1px;
 border-bottom-style: solid;
 position: relative;
 border-bottom-color: #336699;
+
 }
+
+
 
 /*
  * Main content
