@@ -33,16 +33,30 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transform: scale(2.5);
+/**/    /*transform: scale(2.5);*/
+
+/*
+
+-webkit-transform:scale(.8); */
+/*Webkit: Scale down image to 0.6x original size*//*
+
+    -moz-transform:scale(.8); */
+/*Mozilla scale version*//*
+
+    -o-transform:scale(.8); */
+/*Opera scale version*//*
+
+    -webkit-transition-duration: 1.5s; */
+/*Webkit: Animation duration*//*
+
+    -moz-transition-duration: 1.5s; */
+/*Mozilla duration version*//*
+
+    -o-transition-duration: 1.5s; */
+/*Opera duration version*//*
 
 
--webkit-transform:scale(.8); /*Webkit: Scale down image to 0.6x original size*/
-    -moz-transform:scale(.8); /*Mozilla scale version*/
-    -o-transform:scale(.8); /*Opera scale version*/
-    -webkit-transition-duration: 1.5s; /*Webkit: Animation duration*/
-    -moz-transition-duration: 1.5s; /*Mozilla duration version*/
-    -o-transition-duration: 1.5s; /*Opera duration version*/
-
+*/
 
 }
 
@@ -367,7 +381,12 @@ body {
     color: #fff;
     background-color: #003366;
 }
-
+ .sidebar ul li {
+border-bottom-width: 1px;
+border-bottom-style: solid;
+position: relative;
+border-bottom-color: #336699;
+}
 
 /*
  * Main content

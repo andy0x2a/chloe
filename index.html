@@ -132,7 +132,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
-        $(".chloePic").height(Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 1.2);
+        $(".chloePic").height(Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 0.9);
 
 
         $('.subPicker').on('click', function (e) {
@@ -146,13 +146,14 @@
                 $(".info").addClass('hidden');
                 $("." + sectionName).removeClass('hidden');
                 $('body').scrollTop(0);
-
+                $('.nav-sidebar li').removeClass('active');
+                $("#" + idName).parent().addClass('active');
             }
 
         });
 
     });
-    $(".chloePic").css('transform', 'scale(1)')
+  //  $(".chloePic").css('transform', 'scale(1)')
 
 
 </script>
