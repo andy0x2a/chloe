@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-FFGGG T VTTTVT
+
     </div>
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
@@ -252,7 +252,16 @@ FFGGG T VTTTVT
     $(document).ready(function () {
 
         $(".chloePic").height(Math.max(document.documentElement.clientHeight, window.innerHeight || 0) );
-        //$(".chloePic").height(Math.max(document.documentElement.clientHeight, window.innerHeight || 0) );
+//        $(".chloePic > .sloganContainer ").css('margin-top', '60%');
+        var hash = window.location.hash;
+        if (hash) {
+            hash = hash.substr(1);
+            $(".info").addClass('hidden');
+            $("." + hash).removeClass('hidden');
+            $('.nav-sidebar li').removeClass('active');
+            $("#li_" +hash ).parent().addClass('active');
+        }
+
         $('.subPicker').on('click', function (e) {
             e.preventDefault();
             console.log('here');
@@ -265,6 +274,7 @@ FFGGG T VTTTVT
                 $(".info").addClass('hidden');
                 $("." + sectionName).removeClass('hidden');
                 $('body').scrollTop(0);
+                window.history.pushState("", "", '/#' + sectionName);
                 window.scrollTo(0, 0);
                 $('.nav-sidebar li').removeClass('active');
                 $("#" + idName).parent().addClass('active');
