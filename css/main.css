@@ -21,9 +21,16 @@ body {
    Base styles: opinionated defaults
    ========================================================================== */
 
+.andy3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 .mainBG {
-background-image: url(img/bg2.png) ;
-width: 110%;
+background: url(img/bg2.jpg) no-repeat center center fixed;
+/*width: 100%;*/
+    /*height: 1024px;*/
+    /*min-width:100%; min-height:100%; width:auto; height:auto;*/
 
 }
 .chloePic.bioBG {
@@ -36,11 +43,11 @@ height:100%;
 .chloePic {
     height: 750px;
     margin-top: -50px;
-    margin-left: -20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    /*margin-left: -20px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*position: relative;*/
 }
 .chloePic > .sloganContainer {
 /*margin-top:30%;*/
