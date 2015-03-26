@@ -2,10 +2,10 @@
 .world,
 body {
 
-    background-color: #003366;
+    background-color: #1a4782;
 }
 .container-fluid {
-    background-color:  #003366;
+    background-color:  #1a4782;
 
 }
 
@@ -21,8 +21,14 @@ body {
    Base styles: opinionated defaults
    ========================================================================== */
 
+#bgMain {
+    margin-top:-40px;
+    margin-left: -20px;
+    width:105%;
+
+}
 .mainBG {
-background-image: url(img/bg2.png) ;
+background-image: url(img/chloe_bg.png) ;
 width: 110%;
 
 }
@@ -35,11 +41,12 @@ height:100%;
 
 .chloePic {
     height: 750px;
+    width:100%;
     margin-top: -50px;
     margin-left: -20px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     position: relative;
 }
 .chloePic > .sloganContainer {
@@ -72,7 +79,7 @@ border-top: 1px solid rgba(0,0,0,.1);
 border-top: 1px solid rgba(255,255,255,.4);
 padding-top: 10px;
 display: inline-block;
-margin-left:    38%;
+margin-left:    13%;
 margin-right:   auto;
 text-align:center;
 }
@@ -333,7 +340,7 @@ textarea {
 
 .nav-sidebar {
     font-size:20px;
-    color: #003366;
+    color: #003366;;
 
 }
 
@@ -386,7 +393,7 @@ body {
 
         overflow-x: hidden;
         overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-        background-color: #003366;
+        background-color: #1a4782;
         border-right: 5x solid #eee;
     }
 }
@@ -406,26 +413,26 @@ body {
 .nav.nav-sidebar > .active > a:focus
 {
     color: #ffffff;
-    background-color: #003366;
+    background-color: #1a4782;
 }
 .nav.nav-sidebar >  a:hover,
  .nav.nav-sidebar > a:focus
  {
    transform: translateX(3px);
-       color: #3399CC;
-     background-color: #003366;
+       color: red;
+     background-color: #1a4782;
  }
 /*
 .nav-sidebar ul li {
 }*/
 .nav.nav-sidebar li a {
     color: #3399CC;
-      background-color: #003366;
+      background-color: #1a4782;
 }
 .nav.nav-sidebar li a:hover {
 transform: translateX(3px);
     color: #3399CC;
-      background-color: #003366;
+      background-color: #1a4782;
 }
 
 
