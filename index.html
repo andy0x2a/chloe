@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
 </head>
-<body class="world">
+<body class="world ">
 
 <div class="container-fluid">
     <div class="row">
@@ -24,7 +24,7 @@
             <!--<div class="container chloePic">-->
             <!--<div class="chloePic mainBG">-->
             <!--<div>-->
-                <img src="css/img/mainbg_2.png" id="bgMain"/>
+                <img src="css/img/chloe_2_sml.png" id="bgMain"/>
 
                 <!--</div>-->
                 <!--<div class="sloganContainer">-->
@@ -43,6 +43,7 @@
                 <li><a href="#" id="li_bio" class="subPicker">Biography</a></li>
                 <li><a href="#" id="li_donate"
                        class="subPicker">Donate</a></li>
+                 <li><a href="#" id='li_press' class="subPicker">Press Release </a></li>        
                 <li><a href="#" id="li_join" class="subPicker">Join</a>
                 <li><a href="#" id="li_contact" class="subPicker">Contact Us</a>
                 </li>
@@ -63,7 +64,7 @@
         <div class="main col-sm-9 col-md-9 ">
 
 
-            <div class=" info  home">
+            <div class=" info  home ">
                 <!--<div class="jumbotron">-->
                 <div>
                     Dear friends, <br>
@@ -216,6 +217,46 @@
                 </div>
             </div>
 
+<div class="info press hidden"> 
+
+<div>
+    <p>
+    <b>
+    Chloé Ellis Named as the Conservative Candidate in New Westminster – Burnaby </b></p>
+    <p>
+
+New Westminster: Alysia MacGrotty, Chair of the New Westminster – Burnaby 
+Conservative Candidate Nomination Committee, announced today that Chloé Ellis has been named as the Conservative Party of Canada candidate in the riding of New Westminster – Burnaby. </p>
+
+<p>
+A five-year resident and homeowner in New Westminster, Chloé Ellis is committed to representing her riding’s interests in Ottawa. Ms. Ellis is currently a Business Development Manager in Vancouver. She actively supports the promotion and development of small businesses and works hard to ensure their success. Ms. Ellis proudly supports the New Westminster Hyack Association and actively served on the Burnaby – New Westminster EDA as the Financial Agent. </p>
+
+<p>
+“I am grateful and humbled to be named as the Conservative candidate in New Westminster – Burnaby,” stated Chloé Ellis. “I want to thank the Conservative party and its members in my riding for showing such resounding support.” </p>
+
+<p>
+“The stakes are high in the next election for New Westminster – Burnaby, and our choice will clearly be between the strong, serious leadership of Prime Minister Stephen Harper, and the high risk, high tax and high debt agenda of Justin Trudeau and Thomas Mulcair,” Ms. Ellis added. </p>
+<p>
+<br>
+-30-
+</p>
+<p>
+For more information, contact:</p>
+<p>
+Ryan Warawa, Campaign Manager for the Campaign to Elect Chloé Ellis</p>
+<p>
+ryanwarawa@gmail.com</p>
+<p>
+778.892.0059</p>
+<p>
+Website: www.ChloeEllis.ca</p>
+<p>
+Facebook: @ChloeEllisNWB</p>
+
+</div>
+</div>
+
+
             <div class=" info join hidden">
                 <!--<div class="jumbotron">-->
                 <div>
@@ -225,11 +266,12 @@
             <div class=" info donate hidden">
                 <!--<div class="jumbotron">-->
                 <div>
-                    Show your support! Donating any amount, no matter how small makes a BIG impact! <br>
-                    Contact Matthew Elder, Financial Agent for the Nomination Campaign at <a href="mailto:matt@chloeellis.ca?Subject=Donation" target="_top">matt@chloeellis.ca</a>
-                    <br>
-                    Please make cheques payable to Matthew Elder, Financial Agent for the Chloé Ellis Nomination
-                    Campaign.
+                <p>
+                    Show your support! Donating any amount, no matter how small makes a BIG impact! </p><br>
+                   <p> Contact Matthew Elder, Financial Agent for the Nomination Campaign at <a href="mailto:matt@chloeellis.ca?Subject=Donation" target="_top">matt@chloeellis.ca</a>
+                    <br></p>
+                    <p>Please make cheques payable to Matthew Elder, Financial Agent for the Chloé Ellis Nomination
+                    Campaign.</p>
                 </div>
             </div>
             <div class="info contact hidden">
@@ -240,6 +282,13 @@
                     Or contact Chloé directly at <a  href="mailto:chloe@chloeellis.ca" target="_top">chloe@chloeellis.ca</a><br>
 
                     <br>
+                        For more information, contact:</p>
+    <p>
+    Ryan Warawa, Campaign Manager for the Campaign to Elect Chloé Ellis</p>
+    <p>
+    ryanwarawa@gmail.com</p>
+    <p>
+    778.892.0059</p>
                     <h2>CAMPAIGN OFFICE</h2>
                     Coming soon!
                 </div>
@@ -277,7 +326,7 @@
                 $("." + sectionName).removeClass('hidden');
                 $('body').scrollTop(0);
                 window.history.pushState("", "", '/#' + sectionName);
-                window.scrollTo(0, 0);
+                // window.scrollTo(0, 0);
                 $('.nav-sidebar li').removeClass('active');
                 $("#" + idName).parent().addClass('active');
             }

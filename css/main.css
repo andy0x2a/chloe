@@ -24,9 +24,19 @@ body {
 #bgMain {
     margin-top:-50px;
     margin-left: -20px;
-    width:105%;
+    width:75%;
+    /*height:20%;*/
 
 }
+.hnl
+{
+    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue",
+'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial",sans-serif;
+    font-weight:300;
+    font-stretch:normal;
+}
+
+
 .mainBG {
 background-image: url(img/chloe_bg.png) ;
 width: 110%;
@@ -486,6 +496,12 @@ border-bottom-color: #336699;
     border-radius: 50%;
 }
 
+.info {
+    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue",
+'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial",sans-serif;
+    font-weight:300;
+    font-stretch:normal;
+}
 
 .info ul {
     list-style-type: none;
