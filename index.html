@@ -19,12 +19,12 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-12 col-md-12 ">
+        <div class="col-sm-12 col-md-12  col-xs-12 header">
             <!--<div class="jumbotron">-->
             <!--<div class="container chloePic">-->
             <!--<div class="chloePic mainBG">-->
             <!--<div>-->
-                <img src="css/img/chloe_2_sml.png" id="bgMain"/>
+                <img src="css/img/chloe_3_tiny.png" id="bgMain"/>
 
                 <!--</div>-->
                 <!--<div class="sloganContainer">-->
@@ -34,9 +34,11 @@
             </div>
         </div>
 
-    </div>
-    <div class="row">
-        <div class="col-sm-2 col-md-2 sidebar">
+    <!-- </div> -->
+
+    <div class="row  ">
+    <div class="center-block">
+        <div class="col-sm-2 col-md-2 col-xs-4 sidebar ">
             <ul class="nav nav-sidebar">
                 <li class="active"><a href="#" id="li_home" class="subPicker">Home</a>
                 </li>
@@ -44,7 +46,7 @@
                 <li><a href="#" id="li_donate"
                        class="subPicker">Donate</a></li>
                  <li><a href="#" id='li_press' class="subPicker">Press Release </a></li>        
-                <li><a href="#" id="li_join" class="subPicker">Join</a>
+                <li><a href="#" id="li_join" class="subPicker">Join</a></li>
                 <li><a href="#" id="li_contact" class="subPicker">Contact Us</a>
                 </li>
 
@@ -61,7 +63,7 @@
             </div>
 
         </div>
-        <div class="main col-sm-9 col-md-9 ">
+        <div class="main col-sm-6 col-lg-9 col-md-8 col-xs-6">
 
 
             <div class=" info  home ">
@@ -296,7 +298,7 @@ Facebook: @ChloeEllisNWB</p>
         </div>
     </div>
 </div>
-
+</div>
 <script src="js/jquery-1.11.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
@@ -324,7 +326,7 @@ Facebook: @ChloeEllisNWB</p>
 
                 $(".info").addClass('hidden');
                 $("." + sectionName).removeClass('hidden');
-                $('body').scrollTop(0);
+                // $('body').scrollTop(0);
                 window.history.pushState("", "", '/#' + sectionName);
                 // window.scrollTo(0, 0);
                 $('.nav-sidebar li').removeClass('active');
